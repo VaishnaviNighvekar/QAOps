@@ -1,0 +1,17 @@
+node_modules/
+allure-report/
+allure-results/
+playwright-report/
+test-results/
+*.png
+state.json
+temp_explore.js
+.DS_Store
+/cucumber-report.html
+.claude/settings.local.json
+.playwright-cli/
+
+# Playwright
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
