@@ -1,5 +1,6 @@
 name: Playwright Tests
 on:
+  #Trigger the workflow on push or pull request events to the main or master branches
   push:
     branches: [ main, master ]
   pull_request:
@@ -7,9 +8,12 @@ on:
 jobs:
   test:
     timeout-minutes: 60
+    # The workflow will run on the latest version of Ubuntu
     runs-on: ubuntu-latest
     steps:
+      #CHECKOUT LATEST CODE
     - uses: actions/checkout@v5
+    #SETUP NODEJS
     - uses: actions/setup-node@v5
       with:
         node-version: lts/*
